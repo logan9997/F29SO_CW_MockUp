@@ -26,6 +26,27 @@ header {
     border-bottom: 5px solid black;
 }
 
+#left form {
+    background-color: yellow;
+    height: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#left form div {
+    padding: auto;
+    background-color: brown;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+#left form label, input {
+    width: 45%;
+    text-align: center;
+}
+
 #right {
     width: 75%;
     background-color: green;
