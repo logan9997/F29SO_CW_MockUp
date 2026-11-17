@@ -42,7 +42,7 @@ header {
     flex-direction: row;
 }
 
-#left form label, input {
+#left form label, input, select {
     width: 45%;
     text-align: center;
 }
