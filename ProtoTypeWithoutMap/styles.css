@@ -1,27 +1,19 @@
-html {
-    font-family:'Courier New', Courier, monospace;
+html, body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 700px 100px;
+    grid-template-rows: 100px 700px;
     grid-gap: 10px;
     grid-template-areas:
         'header'
         'content'
-        'footer';
 }
-
 
 header {
-    background-color: rgb(231, 219, 111);
-    text-align: center;
-    padding: 10px;
-}
-
-footer {
-    background-color: rgb(231, 219, 111);
+    background-color: blue;
     text-align: center;
     padding: 10px;
 }
@@ -35,7 +27,6 @@ footer {
 
 .left {
     width: 25%;
-    background-color: rgb(231, 219, 111);
     margin: 70px;
 }
 
@@ -57,7 +48,6 @@ footer {
 }
 
 .left form div {
-    background-color: brown;
     padding: auto;
     border: 2px solid black;
     display: flex;
