@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -14,50 +15,60 @@
     <section id="search">
         <section id="left">
             <h2>Search</h2>
-            <form action="" method="get">
+            <form id="form" action="javascript:formSubmit()" method="get">
                 <div>
                     <label for="start">Starting Point</label>
                     <input type="text" name="start" id="start" value="Heriot-Watt" disabled>
                 </div>
                 <div>
                     <label for="start">Destination</label>
-                    <select name="" id="">
+                    <select name="destination" id="destination">
                         <option value="Haymarket">Haymarket</option>
                         <option value="Edinburgh Zoo">Edinburgh Zoo</option>
                         <option value="Napier University">Napier University</option>
-                        <option value="Edinburgh Castle">Edinburgh Castle</option>
                     </select>
                 </div>
                 <div>
                     <label for="date">Departure Date</label>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" value="2026-11-19">
                 </div>
                 <div>
                     <label for="time">Departure Time</label>
                     <input type="time" name="time" id="time">
                 </div>
-                <div>
-                    <label for="">Transport Modes</label>
+                <div style="display: block;">
+                    <label style="margin: 10px;">Transport Modes</label>
                     <ul>
                         <li>
                             <input type="checkbox" name="taxi" id="">
-                            <label for="taxi">Taxi</label>
+                            <label style="color:green" for="taxi">Taxi</label>
                         </li>
                         <li>
                             <input type="checkbox" name="bus" id="">
-                            <label for="bus">Bus</label>
+                            <label style="color:blue" for="bus">Bus</label>
                         </li>
-                        <li>
+                        <!-- <li>
                             <input type="checkbox" name="train" id="">
-                            <label for="train">train</label>
-                        </li>
+                            <label for="train">Train</label>
+                        </li> -->
                     </ul>
                 </div>
+                <div>
+                    <input type="submit" value="Search">
+                </div>
             </form>
+            <section id="results" style="display: none;">
+                <div>
+                    <span id="transport-result">Transport: </span>
+                </div>
+                <div>
+                    <span id="cost-result"></span>
+                </div>
+            </section>
         </section>
         
         <section id="right">
-            <img src="media/ediMap.png" alt="">
+            <img src="media/ediMap.png" id="mapImg">
         </section>
     </section>
 

@@ -1,5 +1,5 @@
-html {
-    font-family:'Courier New', Courier, monospace;
+html, body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
@@ -15,36 +15,57 @@ header {
 
 #left {
     width: 25%;
-    background-color: red;
 }
 
 #left h2 {
     background-color: gainsboro;
     text-align: center;
     margin-top: 0;
+    margin-right: 10px;
     padding: 15px;
     border-bottom: 5px solid black;
 }
 
 #left form {
-    background-color: yellow;
     height: 60%;
-    display:flex;
+    display:inline-flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-size: large;
 }
 
-#left form div {
+#left form div, #results div {
     padding: auto;
-    background-color: brown;
     border: 2px solid black;
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+    width: 366px;
+
 }
 
 #left form label, input, select {
     width: 45%;
-    text-align: center;
+}
+#left form ul {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+#left form ul input {
+    width: auto;
+} 
+
+#results div {
+    display: block;
+}
+
+#results span {
+    margin-left: 10px;
 }
 
 #right {
