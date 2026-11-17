@@ -1,0 +1,9 @@
+html {
+    font-family:'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+}
