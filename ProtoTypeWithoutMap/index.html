@@ -5,11 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
-<body>
-    <header>
-        <h1>Universal Transport System</h1>
-    </header>
+    <body>
+        <div class="main">
+            <header>
+                <h1>Universal Transport System</h1>
+            </header>
 
-</body>
+            <div class="content">
+                <div class="left">
+                    <h2>Search</h2>
+                    <form action="" method="get">
+                        <div>
+                            <label for="start">Starting Point</label>
+                            <input type="text" name="start" id="start" value="Heriot-Watt" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="start">Destination</label>
+                            <select name="" id="">
+                                <option value="Haymarket">Haymarket</option>
+                                <option value="Edinburgh Zoo">Edinburgh Zoo</option>
+                                <option value="Napier University">Napier University</option>
+                                <option value="Edinburgh Castle">Edinburgh Castle</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="date">Departure Date</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+
+                        <div>
+                            <label for="time">Departure Time</label>
+                            <input type="time" name="time" id="time">
+                        </div>
+
+                        <div style="display: block;">
+                            <label for="">Transport Modes</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="taxi" id="">
+                                    <label for="taxi">Taxi</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="bus" id="">
+                                    <label for="bus">Bus</label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <input type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="right">
+                    <img src="Media/vehicles.png" style="width: 100%; height: auto;" alt="vehicles">
+                </div>
+            </div>
+
+            <footer>
+
+            </footer>
+        </div>
+    </body>
 </html>

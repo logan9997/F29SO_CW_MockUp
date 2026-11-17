@@ -2,8 +2,91 @@ html {
     font-family:'Courier New', Courier, monospace;
 }
 
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 700px 100px;
+    grid-gap: 10px;
+    grid-template-areas:
+        'header'
+        'content'
+        'footer';
+}
+
+
 header {
-    background-color: blue;
+    background-color: rgb(231, 219, 111);
     text-align: center;
     padding: 10px;
+}
+
+footer {
+    background-color: rgb(231, 219, 111);
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    grid-template-columns: 20% auto;
+    justify-content: space-between;
+    padding: 0px 120px 0px 120px;
+}
+
+.left {
+    width: 25%;
+    background-color: rgb(231, 219, 111);
+    margin: 70px;
+}
+
+.left h2 {
+    background-color: gainsboro;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px;
+    border-bottom: 5px solid black;
+}
+
+.left form {
+    height: 60%;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: large;
+    width: 100%;
+}
+
+.left form div {
+    background-color: brown;
+    padding: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.left form label, input, select {
+    width: 45%;
+}
+
+.left form ul {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+.left form ul input {
+    width: auto;
+} 
+
+.right {
+    margin-top: auto;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
 }
