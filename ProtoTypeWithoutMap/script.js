@@ -2,6 +2,8 @@ function formSubmit() {
     var form = document.getElementById("form");
     var formData = new FormData(form);
     var results = document.getElementById("results");
+    var transportDiv = document.getElementById("transport-div");
+    var costDiv = document.getElementById("cost-div");
     
     var destination = formData.get("destination");
     var taxi = formData.get("taxi");
@@ -24,11 +26,9 @@ function formSubmit() {
     if (bus) {route += " bus"}
     if (taxi) {route += " taxi"}
     if (!bus && !taxi) {
-        img.src = "media/ediMap.png";
         results.style.display = "none";
         return;
     }
-    img.src = "media/" + route + ".png";
 
     var cost = search_results[route].split("|")[0];
     var transport = search_results[route].split("|")[1];
@@ -37,5 +37,6 @@ function formSubmit() {
     cost_result.innerHTML = "Estimated Cost: £" + cost;
     transport_result.innerHTML = "Transport: " + transport;
 
-    results.style.display = "block";
+    transportDiv.style.display = "block";
+    costDiv.style.display = "block";
 }

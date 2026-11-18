@@ -5,7 +5,7 @@ html, body {
 .main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 700px;
+    grid-template-rows: 100px 500px;
     grid-gap: 10px;
     grid-template-areas:
         'header'
@@ -47,7 +47,7 @@ header {
     width: 100%;
 }
 
-.left form div {
+.left form div, #results div {
     padding: auto;
     border: 2px solid black;
     display: flex;
@@ -73,7 +73,24 @@ header {
 } 
 
 .right {
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#results {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+#results div {
+    display: none;
+    width: 40%;
+}
+
+#results span {
+    margin-left: 10px;
 }
 
 .right img {
